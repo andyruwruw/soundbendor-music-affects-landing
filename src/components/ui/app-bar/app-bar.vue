@@ -17,9 +17,9 @@
         color="#6f49ce"
         elevation="0"
         dark
-        flat
         rounded
-        dense>
+        dense
+        @click="goToDownload">
         Download
       </v-btn>
     </div>
@@ -37,6 +37,7 @@ export default Vue.extend({
   methods: {
     ...mapActions('navigation', [
       'goToHome',
+      'goToDownload',
     ]),
   },
 });

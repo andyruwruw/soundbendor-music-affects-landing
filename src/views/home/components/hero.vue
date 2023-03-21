@@ -14,11 +14,11 @@
       <v-btn
         color="#6f49ce"
         elevation="0"
+        max-width="15rem"
         dark
-        flat
         rounded
         dense
-        max-width="15rem">
+        @click="goToDownload">
         Download the App
       </v-btn>
     </div>
@@ -27,9 +27,16 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { mapActions } from 'vuex';
 
 export default Vue.extend({
   name: 'home-hero',
+
+  methods: {
+    ...mapActions('navigation', [
+      'goToDownload',
+    ]),
+  },
 });
 </script>
 

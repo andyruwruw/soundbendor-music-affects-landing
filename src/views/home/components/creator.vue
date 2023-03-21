@@ -7,7 +7,13 @@
         </span>
 
         <span :class="$style.description">
-          Oregon State University's computational understanding of music research group.
+          Oregon State University's computational understanding of
+          music research group.
+        </span>
+
+        <span :class="$style.description">
+          Developed by Andrew Young, Allison Schultz, Danielle Puga,
+          and Matthew Walker
         </span>
 
         <v-btn
@@ -16,11 +22,10 @@
           href="https://soundbendor.org/"
           elevation="0"
           dark
-          flat
           rounded
           dense
-          max-width="10rem">
-          Learn More
+          max-width="15rem">
+          Learn More / Contact
         </v-btn>
       </div>
 

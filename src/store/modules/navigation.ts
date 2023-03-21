@@ -78,11 +78,29 @@ const actions: ActionTree<NavigationState, any> = {
     state,
   }): void {
     try {
-      if (state.currentPage !== 'Home') {
+      if (state.currentPage !== 'home') {
         router.push('/');
       }
     } catch (error) {
-      dispatch('goTo404');
+      dispatch('goToHome');
+    }
+  },
+
+  /**
+   * Routes the user to Download page.
+   *
+   * @param {ActionContext<NavigationState, any>} context Vuex action context.
+   */
+  goToDownload({
+    dispatch,
+    state,
+  }): void {
+    try {
+      if (state.currentPage !== 'download') {
+        router.push('/download');
+      }
+    } catch (error) {
+      dispatch('goToHome');
     }
   },
 };

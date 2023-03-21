@@ -18,6 +18,11 @@ const routes: Array<RouteConfig> = [
     name: 'about',
     component: () => import('../views/about/about-view.vue'),
   },
+  {
+    path: '/download',
+    name: 'download',
+    component: () => import('../views/download/download-view.vue'),
+  },
 ];
 
 const router = new VueRouter({

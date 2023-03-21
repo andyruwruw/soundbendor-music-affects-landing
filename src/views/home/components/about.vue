@@ -9,6 +9,11 @@
         </span>
 
         <span :class="$style.description">
+          Music Affects plans on building off previous studies by crowd
+          sourcing data collection.
+        </span>
+
+        <span :class="$style.description">
           We play you a random song, and you tell us how it makes you feel!
         </span>
 
